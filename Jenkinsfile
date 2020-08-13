@@ -16,7 +16,8 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true install'
+                echo 'Building Clean'
+                sh 'mvn clean install'
             }
             post {
                 success {
@@ -27,6 +28,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'mvn org.pitest:pitest-maven:mutationCoverage'
             }
         }
     }

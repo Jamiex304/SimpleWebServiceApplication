@@ -16,7 +16,7 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                echo 'Building Clean'
+                echo 'Building Clean Version'
                 sh 'mvn clean install'
             }
             post {
@@ -27,12 +27,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing'
                 sh 'mvn org.pitest:pitest-maven:mutationCoverage'
             }
             post {
-                success {
-                    pitmutation 'target/pitestResults/**/*.xml'
+                 pitmutation 'target/pitestResults/**/*.xml'
                 }
             }
         }

@@ -30,6 +30,11 @@ pipeline {
                 echo 'Testing..'
                 sh 'mvn org.pitest:pitest-maven:mutationCoverage'
             }
+            post {
+                success {
+                    pitmutation 'target/pitestResults/**/*.xml'
+                }
+            }
         }
     }
 }

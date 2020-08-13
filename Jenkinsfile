@@ -32,7 +32,6 @@ pipeline {
             }
             post {
                  pitmutation 'target/pitestResults/**/*.xml'
-                }
             }
         }
     }

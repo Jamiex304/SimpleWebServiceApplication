@@ -18,13 +18,13 @@ pipeline {
             steps {
                 echo 'Building Clean Version'
                 sh 'mvn clean install'
-                echo 'Testing'
-                sh 'mvn org.pitest:pitest-maven:mutationCoverage'
+                echo 'Mutation Coverage'
+                sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
             }
             post {
                 success {
                     junit 'target/surefire-reports/**/*.xml'
-                    pitmutation 'target/pitestResults/**/*.xml'
+                    pitmutation 'target/pit-reports/**/*.xml'
                 }
             }
         }

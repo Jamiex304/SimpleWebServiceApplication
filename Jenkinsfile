@@ -32,7 +32,7 @@ pipeline {
             }
             post {
                 success {
-                    pitest 'target/pitestResults/**/*.xml'
+                    pitmutation 'target/pitestResults/**/*.xml'
                 }
             }
         }

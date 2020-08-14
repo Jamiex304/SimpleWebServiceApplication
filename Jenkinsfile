@@ -33,7 +33,6 @@ pipeline {
                 minimumKillRatio: 50.0,
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
                 }
-            }
         }
     }
 }

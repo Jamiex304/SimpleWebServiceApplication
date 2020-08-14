@@ -22,10 +22,11 @@
             <version>4.13</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/pitmutation -->
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>pitmutation</artifactId>
-            <version>1.0-18</version>
+            <version>1.0-17</version>
         </dependency>
     </dependencies>
     <build>

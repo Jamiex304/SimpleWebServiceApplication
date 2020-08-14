@@ -17,8 +17,6 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'Building Clean Version'
-                sh 'mvn clean install'
-                echo 'Mutation Coverage'
                 sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
             }
             post {

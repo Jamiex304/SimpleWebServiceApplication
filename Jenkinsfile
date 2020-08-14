@@ -22,6 +22,7 @@ pipeline {
             post {
                 success {
                     junit 'target/surefire-reports/**/*.xml'
+                    pitest 'target/pit-reports/**/*.xml'
                 }
             }
         }

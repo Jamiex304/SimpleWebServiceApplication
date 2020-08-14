@@ -33,6 +33,7 @@ pipeline {
                 minimumKillRatio: 50.0,
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
                 publishCoverage adapters: [istanbulCoberturaAdapter('target/site/cobertura/*.xml')]
+                publishCoverage adapters: [jacocoAdapter('target/site/jacoco/*.xml')]
                 }
         }
     }

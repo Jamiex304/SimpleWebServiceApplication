@@ -35,5 +35,6 @@ pipeline {
                      pitmutation 'target/pit-reports/**/*.xml'
                  }
              }
+        }
     }
 }

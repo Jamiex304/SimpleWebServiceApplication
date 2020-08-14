@@ -6,15 +6,18 @@ pipeline {
     }
 
     stages {
-        stage ('Full Test Coverage') {
+        stage ('Test And Coverage') {
             steps {
-                echo 'Running Mutation & Code Coverage Tests'
+                echo 'Running Clean Install With Mutation'
                 sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
+                echo 'Creating Cobertura Coverage Report'
+                publishCoverage adapters: [istanbulCoberturaAdapter('target/site/cobertura/*.xml')]
+                echo 'Creating Jacoco Coverage Report'
+                publishCoverage adapters: [jacocoAdapter('target/site/jacoco/*.xml')]
+                echo 'Creating Mutation Coverage Report'
                 pitmutation killRatioMustImprove: false,
                 minimumKillRatio: 50.0,
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
-                publishCoverage adapters: [istanbulCoberturaAdapter('target/site/cobertura/*.xml')]
-                publishCoverage adapters: [jacocoAdapter('target/site/jacoco/*.xml')]
             }
             post {
                 success {

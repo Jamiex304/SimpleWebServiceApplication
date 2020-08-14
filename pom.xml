@@ -36,6 +36,7 @@
                 <configuration>
                     <outputFormats>
                         <outputFormat>XML</outputFormat>
+                        <outputFormat>HTML</outputFormat>
                     </outputFormats>
                     <skip>false</skip>
                 </configuration>

@@ -6,17 +6,17 @@ import org.junit.Test;
 
 public class AppUnitTest {
 
-    @Test
-    public void whenEmptyString_thanAccept() {
-        App app = new App();
-        assertTrue(app.isPalindrome(""));
-    }
-
-    @Test
-    public void whenPalindrom_thanAccept() {
-        App app = new App();
-        assertTrue(app.isPalindrome("noon"));
-    }
+//    @Test
+//    public void whenEmptyString_thanAccept() {
+//        App app = new App();
+//        assertTrue(app.isPalindrome(""));
+//    }
+//
+//    @Test
+//    public void whenPalindrom_thanAccept() {
+//        App app = new App();
+//        assertTrue(app.isPalindrome("noon"));
+//    }
 
 //    @Test
 //    public void whenNotPalindrom_thanReject(){

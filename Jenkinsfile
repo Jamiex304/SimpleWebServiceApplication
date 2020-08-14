@@ -32,6 +32,7 @@ pipeline {
                 pitmutation killRatioMustImprove: false,
                 minimumKillRatio: 50.0,
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
+                publishCoverage adapters: [jacocoAdapter('target/site/jacoco/jacoco.xml')]
                 }
         }
     }

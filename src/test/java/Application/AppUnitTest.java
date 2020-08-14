@@ -12,17 +12,17 @@ public class AppUnitTest {
         assertTrue(app.isPalindrome(""));
     }
 
-    @Test
-    public void whenPalindrom_thanAccept() {
-        App app = new App();
-        assertTrue(app.isPalindrome("noon"));
-    }
-
-    @Test
-    public void whenNotPalindrom_thanReject(){
-        App app = new App();
-        assertFalse(app.isPalindrome("box"));
-    }
+//    @Test
+//    public void whenPalindrom_thanAccept() {
+//        App app = new App();
+//        assertTrue(app.isPalindrome("noon"));
+//    }
+//
+//    @Test
+//    public void whenNotPalindrom_thanReject(){
+//        App app = new App();
+//        assertFalse(app.isPalindrome("box"));
+//    }
 
 //    @Test
 //    public void whenNearPalindrom_thanReject(){

@@ -6,26 +6,7 @@ pipeline {
     }
 
     stages {
-        stage ('Initialize') {
-            steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
-            }
-        }
-        stage ('Build') {
-            steps {
-                echo 'Building Clean Version & Running Tests'
-                sh 'mvn clean install'
-            }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml'
-                }
-            }
-        }
-        stage ('Testing') {
+        stage ('Full Test Coverage') {
             steps {
                 echo 'Running Mutation & Code Coverage Tests'
                 sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
@@ -34,7 +15,12 @@ pipeline {
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
                 publishCoverage adapters: [istanbulCoberturaAdapter('target/site/cobertura/*.xml')]
                 publishCoverage adapters: [jacocoAdapter('target/site/jacoco/*.xml')]
+            }
+            post {
+                success {
+                    junit 'target/surefire-reports/**/*.xml'
                 }
+            }
         }
     }
 }

@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo 'Running Mutation & Code Coverage Tests'
                 sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
-                pitmutation killRatioMustImprove: false,
+                pitmutation killRatioMustImprove: true,
                 minimumKillRatio: 80.0,
                 mutationStatsFile: 'target/pit-reports/**/mutations.xml'
                 }

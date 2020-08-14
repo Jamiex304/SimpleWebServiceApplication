@@ -24,9 +24,9 @@ public class AppUnitTest {
         assertFalse(app.isPalindrome("box"));
     }
 
-//    @Test
-//    public void whenNearPalindrom_thanReject(){
-//        App app = new App();
-//        assertFalse(app.isPalindrome("neon"));
-//    }
+    @Test
+    public void whenNearPalindrom_thanReject(){
+        App app = new App();
+        assertFalse(app.isPalindrome("neon"));
+    }
 }

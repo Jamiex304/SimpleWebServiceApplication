@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d99d1f6-efc0-4f23-b1d8-cacd012fa8da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a72780f1aac34bd41f1a093edd91f463436f6b0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a72780f1aac34bd41f1a093edd91f463436f6b0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleAppPITest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleAppPITest-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cobertura/cobertura.ser" beforeDir="false" afterPath="$PROJECT_DIR$/target/cobertura/cobertura.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202008140936/Application/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202008140936/Application/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202008140936/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202008140936/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202008140936/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cobertura/coverage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cobertura/coverage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Application/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/Application/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Application/App.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/Application/App.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/Application/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Application/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/Application/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Application.AppUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Application.AppUnitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Application.AppUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Application.AppUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Application/AppUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Application/AppUnitTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +69,7 @@
       <workItem from="1597320085392" duration="9227000" />
       <workItem from="1597331290835" duration="275000" />
       <workItem from="1597384450907" duration="13284000" />
-      <workItem from="1597643549994" duration="1935000" />
+      <workItem from="1597643549994" duration="2567000" />
     </task>
     <servers />
   </component>

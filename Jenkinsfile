@@ -10,8 +10,6 @@ pipeline {
             steps {
                 echo 'Running Clean Install With Mutation'
                 sh 'mvn clean install org.pitest:pitest-maven:mutationCoverage'
-                echo 'Creating Cobertura Coverage Report'
-                publishCoverage adapters: [istanbulCoberturaAdapter('target/site/cobertura/*.xml')]
                 echo 'Creating Jacoco Coverage Report'
                 publishCoverage adapters: [jacocoAdapter('target/site/jacoco/*.xml')]
                 echo 'Creating Mutation Coverage Report'

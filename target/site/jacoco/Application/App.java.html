@@ -3,13 +3,13 @@
 <span class="fc" id="L3">public class App {</span>
 
     public boolean isPalindrome(String inputString) {
-<span class="pc bpc" id="L6" title="1 of 2 branches missed.">        if (inputString.length() == 0) {</span>
+<span class="fc bfc" id="L6" title="All 2 branches covered.">        if (inputString.length() == 0) {</span>
 <span class="fc" id="L7">            return true;</span>
         } else {
-<span class="nc" id="L9">            char firstChar = inputString.charAt(0);</span>
-<span class="nc" id="L10">            char lastChar = inputString.charAt(inputString.length() - 1);</span>
-<span class="nc" id="L11">            String mid = inputString.substring(1, inputString.length() - 1);</span>
-<span class="nc bnc" id="L12" title="All 4 branches missed.">            return (firstChar == lastChar) &amp;&amp; isPalindrome(mid);</span>
+<span class="fc" id="L9">            char firstChar = inputString.charAt(0);</span>
+<span class="fc" id="L10">            char lastChar = inputString.charAt(inputString.length() - 1);</span>
+<span class="fc" id="L11">            String mid = inputString.substring(1, inputString.length() - 1);</span>
+<span class="fc bfc" id="L12" title="All 4 branches covered.">            return (firstChar == lastChar) &amp;&amp; isPalindrome(mid);</span>
         }
     }
 }
